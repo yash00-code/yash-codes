@@ -1,0 +1,56 @@
+//prime numbers check 
+//first apporach------------------------------------------------
+let num=12;
+let nof=0;
+for(let div=1;div<=num;div++){
+    if(num%div==0){
+        nof++;
+        
+    }
+}
+if(nof>2){
+    console.log(" not prime");
+    
+}else{
+    console.log("prime");
+    
+}
+//secomd approach --------------------------------------
+
+let number=12;
+let nofff=0;
+for(let div=1;div<=number;div++){
+    if(number%div==0){
+        nofff++;
+        break;//=====that called optimazation
+        
+    }
+}
+if(nofff>2){
+    console.log(" not prime");
+    
+}else{
+    console.log("prime");
+    
+}
+
+//thired apporachs--------------------------------------------------------
+let numbers=12;
+let noff=0;
+for(let div=1;div*div<=numbers;div++){
+    if(numbers%div==0){
+        noff++;
+        break;//=====that called optimazation
+        
+    }
+}
+if(noff==0){
+    console.log("  prime");
+    
+}else{
+    console.log(" not prime");
+    
+}
+
+
+
